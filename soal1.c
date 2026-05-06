@@ -58,9 +58,9 @@ int main() {
         enqueue(antrian, namabaru, dcumul);
     }
     int totalwait;
-    printf("ORDER ");
+    printf("ORDER");
     for(int i = 0; i<n; i++){
-        printf("%s ", antrian->front->nama);
+        printf(" %s", antrian->front->nama);
         totalwait += antrian->front->d;
         if (i!=n-1){
             antrian->front=antrian->front->next;    
